@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Kind</key>
+    <string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+  
+    <key>Identifier</key>
+    <string>de.zeezide.dt.unit.swiftxcode.images.kitura.endpoint</string>
+
+    <key>Ancestors</key>
+    <array>
+      <string>de.zeezide.dt.unit.spmToolBase</string>
+    </array>
+
+    <key>Concrete</key>
+    <true/>
+
+    <key>Description</key>
+    <string>This template provides a starting point for an endpoint using the IBM Kitura web framework.</string>
+    
+    <key>Targets</key>
+    <array>
+      <dict>
+        <key>ProductType</key>
+        <string>com.apple.product-type.tool</string>
+        <key>TargetIdentifier</key>
+        <string>com.apple.dt.commandLineToolTarget</string>
+
+        <key>BuildPhases</key>
+        <array>
+          <dict>
+            <key>SortOrder</key>    <integer>0</integer>
+            <key>Name</key>
+            <string>Build Swift Package Manager Dependencies</string>
+            <key>Class</key>      <string>ShellScript</string>
+            <key>ShellPath</key>  <string>/bin/sh</string>
+            <key>ShellScript</key>
+            <string>SPM_IMAGE=Kitura swift xcode build</string>
+          </dict>
+          <dict><key>Class</key><string>Sources</string>   </dict>
+          <dict><key>Class</key><string>Frameworks</string></dict>
+        </array>
+      </dict>
+    </array>
+    
+    <key>Nodes</key>
+    <array>
+      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:comments</string>
+      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:Foundation</string>
+      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:Kitura</string>
+      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:LoggerAPI</string>
+      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:Configuration</string>
+      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:CloudEnvironment</string>
+      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:KituraContracts</string>
+      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appglobals:ProjectPath(public let projectPath = ConfigurationManager.BasePath.project.path)</string>
+      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass</string>
+      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass:init</string>
+      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass:init:code:metrics(// Run the metrics initializer
+        initializeMetrics(router: router\))</string>
+      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass:postInit:preroutes</string>
+      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass:postInit:routes:___PACKAGENAMEASIDENTIFIER___</string>
+      
+      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/InitializationError.swift</string>
+      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/Metrics.swift</string>
+      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Routes/___PACKAGENAMEASIDENTIFIER___Routes.swift</string>
+
+      <string>Package.swift:spmpackagedecl:deps:Kitura(url: "https://github.com/IBM-Swift/Kitura.git",
+                 .upToNextMinor(from: "2.1.0"\))</string>
+      <string>Package.swift:spmpackagedecl:targets:default:Kitura</string>
+
+      <string>Package.swift:spmpackagedecl:deps:HeliumLogger(url: "https://github.com/IBM-Swift/HeliumLogger.git",
+                 .upToNextMinor(from: "1.7.1"\))</string>
+      <string>Package.swift:spmpackagedecl:targets:default:HeliumLogger</string>
+
+      <string>Package.swift:spmpackagedecl:deps:CloudEnvironment(url: "https://github.com/IBM-Swift/CloudEnvironment.git",
+                 from: "6.0.0")</string>
+      <string>Package.swift:spmpackagedecl:targets:default:CloudEnvironment</string>
+
+      <string>Package.swift:spmpackagedecl:deps:SwiftMetrics(url: "https://github.com/RuntimeTools/SwiftMetrics.git",
+                 from: "2.0.0")</string>
+      <string>Package.swift:spmpackagedecl:targets:default:SwiftMetrics</string>
+
+      <string>Sources/___PACKAGENAMEASIDENTIFIER___/main.swift:imports:import:Foundation</string>
+      <string>Sources/___PACKAGENAMEASIDENTIFIER___/main.swift:imports:import:Kitura</string>
+      <string>Sources/___PACKAGENAMEASIDENTIFIER___/main.swift:imports:import:LoggerAPI</string>
+      <string>Sources/___PACKAGENAMEASIDENTIFIER___/main.swift:imports:import:HeliumLogger</string>
+      <string>Sources/___PACKAGENAMEASIDENTIFIER___/main.swift:body:KituraMain</string>
+    </array>
+    
+    
+    <!-- ***************************************************** -->
+    <!-- TODO: indent, separate out common stuff -->
+    <key>Definitions</key>
+    <dict>
+      <!-- Kitura stuff -->
+      
+      <key>Sources/___PACKAGENAMEASIDENTIFIER___/main.swift</key>
+      <dict>
+        <key>Path</key><string>Sources/main.swift</string>
+      </dict>      
+      <key>Sources/___PACKAGENAMEASIDENTIFIER___/main.swift:body:KituraMain</key>
+      <string>do {
+    HeliumLogger.use(LoggerMessageType.info)
+
+    let app = try ___PACKAGENAMEASIDENTIFIER___App()
+    try app.run()
+
+} catch let error {
+    Log.error(error.localizedDescription)
+}</string>
+      
+      <key>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift</key>
+      <dict>
+        <key>Group</key><array><string>Application</string></array>
+      </dict>
+            
+  		<key>*:kitura:appclass</key>
+      <dict>
+        <key>Beginning</key>
+        <string>public class ___PACKAGENAMEASIDENTIFIER___App {
+    let router   = Router()
+    let cloudEnv = CloudEnv()
+</string>
+        <key>End</key><string>    public func run() throws {
+        try postInit()
+        Kitura.addHTTPServer(onPort: cloudEnv.port, with: router)
+        Kitura.run()
+    }
+}</string>
+      </dict>
+      
+  		<key>*:kitura:appclass:init</key>
+      <dict>
+        <key>Beginning</key>
+        <string>    public init() throws {</string>
+        <key>End</key>
+        <string>    }
+</string>
+      </dict>
+  		<key>*:kitura:appclass:init:code:*</key>
+  		<string>        ___*___</string>
+  		<key>*:kitura:appglobals</key>
+      <dict>
+        <key>Beginning</key><string/>
+        <key>End</key><string>
+</string>
+      </dict>
+  		<key>*:kitura:appglobals:*</key>
+  		<string>___*___</string>
+      
+  		<key>*:kitura:appclass:postInit</key>
+      <dict>
+        <key>Beginning</key>
+        <string>    public func postInit() throws {
+        // Endpoints</string>
+        <key>End</key>
+        <string>    }
+</string>
+      </dict>
+  		<key>*:kitura:appclass:postInit:routes:*</key>
+  		<string>        initialize___*___Routes(app: self)</string>
+  		<key>*:kitura:appclass:postInit:preroutes:raw:*</key>
+  		<string>___*___</string>
+      
+      <!-- Errors Etc -->
+                    
+      <key>Sources/___PACKAGENAMEASIDENTIFIER___/Application/InitializationError.swift</key>
+      <dict>
+        <key>Group</key><array><string>Application</string></array>
+        <key>Path</key><string>Sources/Application/InitializationError.swift</string>
+      </dict>
+      <key>Sources/___PACKAGENAMEASIDENTIFIER___/Application/Metrics.swift</key>
+      <dict>
+        <key>Group</key><array><string>Application</string></array>
+        <key>Path</key><string>Sources/Application/Metrics.swift</string>
+      </dict>
+      
+      <!-- Routes -->
+      
+      <key>Sources/___PACKAGENAMEASIDENTIFIER___/Routes/___PACKAGENAMEASIDENTIFIER___Routes.swift</key>
+      <dict>
+        <key>Group</key><array><string>Routes</string></array>
+        <key>Path</key><string>Sources/Routes/ApplicationRoutes.swift</string>
+      </dict>
+    </dict>
+
+
+    <!-- *************** OPTIONS ********************************* -->
+
+    <key>Options</key>
+    <array>
+      <dict>
+        <key>Identifier</key>   <string>zzKituraHealth</string>
+        <key>Name</key>         <string>Use the Kitura Health Package.</string>
+        <key>Description</key>
+        <string>Whether the Kitura endpoint needs wants Kitura Health functionality.</string>
+        
+        <key>SortOrder</key>    <integer>10</integer>
+        <key>Type</key>         <string>checkbox</string>
+        <key>Default</key>      <string>true</string>
+        <key>NotPersisted</key> <true/>
+        
+        <key>Units</key>
+        <dict>
+          <key>true</key>
+          <array>
+            <dict>
+              <key>Nodes</key>
+              <array>
+                <string>Package.swift:spmpackagedecl:deps:Health(url: "https://github.com/IBM-Swift/Health.git",
+                           from: "0.0.0")</string>
+                <string>Package.swift:spmpackagedecl:targets:default:Health</string>
+
+                <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:Health</string>
+                <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appglobals:KituraHealth(public let health      = Health(\))</string>
+                <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass:postInit:routes:Health</string>
+                <string>Sources/___PACKAGENAMEASIDENTIFIER___/Routes/HealthRoutes.swift</string>
+              </array>
+              <key>Definitions</key>
+              <dict>
+                <key>Sources/___PACKAGENAMEASIDENTIFIER___/Routes/HealthRoutes.swift</key>
+                <dict>
+                  <key>Group</key><array><string>Routes</string></array>
+                  <key>Path</key><string>Sources/Routes/HealthRoutes.swift</string>
+                </dict>
+              </dict>
+            </dict>
+          </array>
+        </dict>
+      </dict>
+      
+      <dict>
+        <key>Identifier</key>   <string>zzKituraCORS</string>
+        <key>Name</key>         <string>Use the Kitura CORS Package.</string>
+        <key>Description</key>
+        <string>Whether the Kitura endpoint needs CORS (Cross Origin Resource Sharing) functionality (e.g. required for the Todo Backend demo).</string>
+        
+        <key>SortOrder</key>    <integer>10</integer>
+        <key>Type</key>         <string>checkbox</string>
+        <key>Default</key>      <string>true</string>
+        <key>NotPersisted</key> <true/>
+        
+        <key>Units</key>
+        <dict>
+          <key>true</key>
+          <array>
+            <dict>
+              <key>Nodes</key>
+              <array>
+                <string>Package.swift:spmpackagedecl:deps:KituraCORS(url: "https://github.com/IBM-Swift/Kitura-CORS",
+                 .upToNextMinor(from: "2.1.0"\))</string>
+                <string>Package.swift:spmpackagedecl:targets:default:KituraCORS</string>
+
+                <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:KituraCORS</string>
+                <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass:postInit:preroutes:KituraCORS</string>
+
+              </array>
+              <key>Definitions</key>
+              <dict>
+                <key>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass:postInit:preroutes:KituraCORS</key>
+                <string>        let options = Options(allowedOrigin: .all)
+        let cors    = CORS   (options: options)
+        router.all("/*", middleware: cors)
+</string>
+              </dict>
+            </dict>
+          </array>
+        </dict>
+      </dict>
+    </array>
+  </dict>
+</plist>

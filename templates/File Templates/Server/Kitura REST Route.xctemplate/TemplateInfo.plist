@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+          "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+  	<key>Kind</key>
+  	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+
+    <key>Identifier</key>
+    <string>de.zeezide.dt.unit.swiftxcode.images.kitura.file.restroute</string>
+
+  	<key>Platforms</key>
+  	<array>
+  		<string>com.apple.platform.macosx</string>
+  	</array>
+    
+  	<key>Description</key>
+  	<string>A Kitura Route that can drive a REST endpoint. Includes the necessary handlers for a REST service and prepares a proper init function.</string>
+  
+  	<key>Summary</key>
+  	<string>Kitura REST Route</string>
+
+  	<key>Icon</key>
+  	<string>TemplateIcon</string>
+  
+  	<key>SortOrder</key>
+  	<string>10</string>
+  
+  	<key>AllowedTypes</key>
+  	<array>
+  		<string>public.swift-source</string>
+  	</array>
+    
+  	<key>DefaultCompletionName</key>
+  	<string>MyPersonal</string>
+
+  	<key>MainTemplateFile</key>
+  	<string>___FILEBASENAME___Routes.swift</string>
+    
+  	<key>Options</key>
+  	<array>
+  		<dict>
+  			<key>Identifier</key> 	<string>productName</string>
+  			<key>Required</key>     <true/>
+  			<key>Name</key>         <string>Route:</string>
+  			<key>Description</key>  <string>The name of the route to create</string>
+  			<key>Type</key>         <string>text</string>
+  			<key>NotPersisted</key>	<true/>
+        <key>Default</key>      <string>MyPersonal</string> <!-- TODO, better one -->
+        <key>SortOrder</key>    <integer>1</integer>
+  		</dict>
+  		<dict>
+        <!-- Note: Xcode removes leading slashes, hence no def:/,req:true -->
+  			<key>Identifier</key> 	<string>urlPrefix</string>
+  			<key>Required</key>     <false/>
+  			<key>Name</key>         <string>URL Prefix:</string>
+  			<key>Description</key>
+        <string>The URL to match the routes on (exclude the leading /).</string>
+  			<key>Type</key>         <string>text</string>
+  			<key>NotPersisted</key>	<true/>
+        <key>Default</key>      <string></string>
+        <key>SortOrder</key>    <integer>2</integer>
+  		</dict>
+      
+  		<dict>
+  			<key>Identifier</key>
+  			<string>CodableRouting</string>
+  			<key>Name</key>
+  			<string>Use Codable Routing</string>
+  			<key>Description</key>  
+        <string>Use the Kitura Codable Routing feature, includes a ToDoBackend-style REST endpoint and a simple in-memory store.</string>
+  			<key>Type</key>    			<string>checkbox</string>
+  			<key>Default</key>  		<string>false</string>
+  			<key>NotPersisted</key>	<true/>
+        <key>SortOrder</key>    <integer>20</integer>
+  		</dict>
+    </array>
+    
+  </dict>
+</plist>
