@@ -10,6 +10,11 @@
 
 Getting started w/ Kitura. Quickly.
 
+### Install Image
+
+```shell
+brew install swiftxcode/swiftxcode/swift-xcode-kitura
+```
 
 ### Who
 
