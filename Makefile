@@ -34,8 +34,8 @@ lint : lint-templates
 
 # image
 
+# SWIFT_XCODE_IMAGING=yes swift xcode build
 build-image :
-	swift xcode build
 	SA_IMAGE=$(PACKAGE) swift xcode image
 
 clean-image:
