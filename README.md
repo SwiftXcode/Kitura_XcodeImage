@@ -1,5 +1,5 @@
 <h2>Kitura SwiftXcode Image
-  <img src="http://zeezide.com/img/SwiftXcodePkgIcon128.png"
+  <img src="http://zeezide.com/img/SwiftXcodePkgIcon.svg"
        align="right" width="128" height="128" />
 </h2>
 
@@ -8,12 +8,18 @@
 ![Travis](https://travis-ci.org/SwiftXcode/Kitura_XcodeImage.svg?branch=master)
 [![homebrew](https://img.shields.io/homebrew/v/cake.svg)](https://github.com/SwiftXcode/homebrew-swiftxcode)
 
-Getting started w/ Kitura. Quickly.
+Getting started w/ [Kitura](http://www.kitura.io). Quickly. Very.
 
-### Install Image
+Instead of using `kitura init` etc, bootstrap Kitura projects in a few seconds
+from within Xcode.
+
+Check the main project for details: [SwiftXcode](https://SwiftXcode.github.io).
+
+### Install Kitura Image
 
 ```shell
 brew install swiftxcode/swiftxcode/swift-xcode-kitura
+swift xcode link-templates # <-- important!
 ```
 
 ### Who
