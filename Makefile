@@ -36,7 +36,7 @@ lint : lint-templates
 
 build-image :
 	swift xcode build
-	swift xcode image
+	SA_IMAGE=$(PACKAGE) swift xcode image
 
 clean-image:
 	swift xcode clean
