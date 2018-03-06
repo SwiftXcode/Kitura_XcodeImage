@@ -22,6 +22,10 @@ brew install swiftxcode/swiftxcode/swift-xcode-kitura
 swift xcode link-templates # <-- important!
 ```
 
+Then, just use Xcode:
+
+<img src="http://zeezide.com/img/swift-xcode-kitura-setup.gif" />
+
 ### Who
 
 Brought to you by
