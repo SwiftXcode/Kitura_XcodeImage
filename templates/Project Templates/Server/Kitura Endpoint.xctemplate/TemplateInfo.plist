@@ -50,24 +50,24 @@ ln -sf "${SOURCE_ROOT}/${PRODUCT_NAME}/.buildzz/.build" "${BUILT_PRODUCTS_DIR}/.
     
     <key>Nodes</key>
     <array>
-      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:comments</string>
-      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:Foundation</string>
-      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:Kitura</string>
-      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:LoggerAPI</string>
-      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:Configuration</string>
-      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:CloudEnvironment</string>
-      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:KituraContracts</string>
-      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appglobals:ProjectPath(public let projectPath = ConfigurationManager.BasePath.project.path)</string>
-      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass</string>
-      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass:init</string>
-      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass:init:code:metrics(// Run the metrics initializer
+      <string>Sources/___PACKAGENAME___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:comments</string>
+      <string>Sources/___PACKAGENAME___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:Foundation</string>
+      <string>Sources/___PACKAGENAME___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:Kitura</string>
+      <string>Sources/___PACKAGENAME___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:LoggerAPI</string>
+      <string>Sources/___PACKAGENAME___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:Configuration</string>
+      <string>Sources/___PACKAGENAME___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:CloudEnvironment</string>
+      <string>Sources/___PACKAGENAME___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:KituraContracts</string>
+      <string>Sources/___PACKAGENAME___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appglobals:ProjectPath(public let projectPath = ConfigurationManager.BasePath.project.path)</string>
+      <string>Sources/___PACKAGENAME___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass</string>
+      <string>Sources/___PACKAGENAME___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass:init</string>
+      <string>Sources/___PACKAGENAME___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass:init:code:metrics(// Run the metrics initializer
         initializeMetrics(router: router\))</string>
-      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass:postInit:preroutes</string>
-      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass:postInit:routes:___PACKAGENAMEASIDENTIFIER___</string>
+      <string>Sources/___PACKAGENAME___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass:postInit:preroutes</string>
+      <string>Sources/___PACKAGENAME___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass:postInit:routes:___PACKAGENAMEASIDENTIFIER___</string>
       
-      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/InitializationError.swift</string>
-      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/Metrics.swift</string>
-      <string>Sources/___PACKAGENAMEASIDENTIFIER___/Routes/___PACKAGENAMEASIDENTIFIER___Routes.swift</string>
+      <string>Sources/___PACKAGENAME___/Application/InitializationError.swift</string>
+      <string>Sources/___PACKAGENAME___/Application/Metrics.swift</string>
+      <string>Sources/___PACKAGENAME___/Routes/___PACKAGENAMEASIDENTIFIER___Routes.swift</string>
 
       <string>Package.swift:spmpackagedecl:deps:Kitura(url: "https://github.com/IBM-Swift/Kitura.git",
                  .upToNextMinor(from: "2.1.0"\))</string>
@@ -85,11 +85,11 @@ ln -sf "${SOURCE_ROOT}/${PRODUCT_NAME}/.buildzz/.build" "${BUILT_PRODUCTS_DIR}/.
                  from: "2.0.0")</string>
       <string>Package.swift:spmpackagedecl:targets:default:SwiftMetrics</string>
 
-      <string>Sources/___PACKAGENAMEASIDENTIFIER___/main.swift:imports:import:Foundation</string>
-      <string>Sources/___PACKAGENAMEASIDENTIFIER___/main.swift:imports:import:Kitura</string>
-      <string>Sources/___PACKAGENAMEASIDENTIFIER___/main.swift:imports:import:LoggerAPI</string>
-      <string>Sources/___PACKAGENAMEASIDENTIFIER___/main.swift:imports:import:HeliumLogger</string>
-      <string>Sources/___PACKAGENAMEASIDENTIFIER___/main.swift:body:KituraMain</string>
+      <string>Sources/___PACKAGENAME___/main.swift:imports:import:Foundation</string>
+      <string>Sources/___PACKAGENAME___/main.swift:imports:import:Kitura</string>
+      <string>Sources/___PACKAGENAME___/main.swift:imports:import:LoggerAPI</string>
+      <string>Sources/___PACKAGENAME___/main.swift:imports:import:HeliumLogger</string>
+      <string>Sources/___PACKAGENAME___/main.swift:body:KituraMain</string>
     </array>
     
     
@@ -99,11 +99,11 @@ ln -sf "${SOURCE_ROOT}/${PRODUCT_NAME}/.buildzz/.build" "${BUILT_PRODUCTS_DIR}/.
     <dict>
       <!-- Kitura stuff -->
       
-      <key>Sources/___PACKAGENAMEASIDENTIFIER___/main.swift</key>
+      <key>Sources/___PACKAGENAME___/main.swift</key>
       <dict>
         <key>Path</key><string>Sources/main.swift</string>
       </dict>      
-      <key>Sources/___PACKAGENAMEASIDENTIFIER___/main.swift:body:KituraMain</key>
+      <key>Sources/___PACKAGENAME___/main.swift:body:KituraMain</key>
       <string>do {
     HeliumLogger.use(LoggerMessageType.info)
 
@@ -114,7 +114,7 @@ ln -sf "${SOURCE_ROOT}/${PRODUCT_NAME}/.buildzz/.build" "${BUILT_PRODUCTS_DIR}/.
     Log.error(error.localizedDescription)
 }</string>
       
-      <key>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift</key>
+      <key>Sources/___PACKAGENAME___/Application/___PACKAGENAMEASIDENTIFIER___App.swift</key>
       <dict>
         <key>Group</key><array><string>Application</string></array>
       </dict>
@@ -169,12 +169,12 @@ ln -sf "${SOURCE_ROOT}/${PRODUCT_NAME}/.buildzz/.build" "${BUILT_PRODUCTS_DIR}/.
       
       <!-- Errors Etc -->
                     
-      <key>Sources/___PACKAGENAMEASIDENTIFIER___/Application/InitializationError.swift</key>
+      <key>Sources/___PACKAGENAME___/Application/InitializationError.swift</key>
       <dict>
         <key>Group</key><array><string>Application</string></array>
         <key>Path</key><string>Sources/Application/InitializationError.swift</string>
       </dict>
-      <key>Sources/___PACKAGENAMEASIDENTIFIER___/Application/Metrics.swift</key>
+      <key>Sources/___PACKAGENAME___/Application/Metrics.swift</key>
       <dict>
         <key>Group</key><array><string>Application</string></array>
         <key>Path</key><string>Sources/Application/Metrics.swift</string>
@@ -182,7 +182,7 @@ ln -sf "${SOURCE_ROOT}/${PRODUCT_NAME}/.buildzz/.build" "${BUILT_PRODUCTS_DIR}/.
       
       <!-- Routes -->
       
-      <key>Sources/___PACKAGENAMEASIDENTIFIER___/Routes/___PACKAGENAMEASIDENTIFIER___Routes.swift</key>
+      <key>Sources/___PACKAGENAME___/Routes/___PACKAGENAMEASIDENTIFIER___Routes.swift</key>
       <dict>
         <key>Group</key><array><string>Routes</string></array>
         <key>Path</key><string>Sources/Routes/ApplicationRoutes.swift</string>
@@ -216,14 +216,14 @@ ln -sf "${SOURCE_ROOT}/${PRODUCT_NAME}/.buildzz/.build" "${BUILT_PRODUCTS_DIR}/.
                            from: "0.0.0")</string>
                 <string>Package.swift:spmpackagedecl:targets:default:Health</string>
 
-                <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:Health</string>
-                <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appglobals:KituraHealth(public let health      = Health(\))</string>
-                <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass:postInit:routes:Health</string>
-                <string>Sources/___PACKAGENAMEASIDENTIFIER___/Routes/HealthRoutes.swift</string>
+                <string>Sources/___PACKAGENAME___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:Health</string>
+                <string>Sources/___PACKAGENAME___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appglobals:KituraHealth(public let health      = Health(\))</string>
+                <string>Sources/___PACKAGENAME___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass:postInit:routes:Health</string>
+                <string>Sources/___PACKAGENAME___/Routes/HealthRoutes.swift</string>
               </array>
               <key>Definitions</key>
               <dict>
-                <key>Sources/___PACKAGENAMEASIDENTIFIER___/Routes/HealthRoutes.swift</key>
+                <key>Sources/___PACKAGENAME___/Routes/HealthRoutes.swift</key>
                 <dict>
                   <key>Group</key><array><string>Routes</string></array>
                   <key>Path</key><string>Sources/Routes/HealthRoutes.swift</string>
@@ -256,13 +256,13 @@ ln -sf "${SOURCE_ROOT}/${PRODUCT_NAME}/.buildzz/.build" "${BUILT_PRODUCTS_DIR}/.
                  .upToNextMinor(from: "2.1.0"\))</string>
                 <string>Package.swift:spmpackagedecl:targets:default:KituraCORS</string>
 
-                <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:KituraCORS</string>
-                <string>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass:postInit:preroutes:KituraCORS</string>
+                <string>Sources/___PACKAGENAME___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:KituraCORS</string>
+                <string>Sources/___PACKAGENAME___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass:postInit:preroutes:KituraCORS</string>
 
               </array>
               <key>Definitions</key>
               <dict>
-                <key>Sources/___PACKAGENAMEASIDENTIFIER___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass:postInit:preroutes:KituraCORS</key>
+                <key>Sources/___PACKAGENAME___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:kitura:appclass:postInit:preroutes:KituraCORS</key>
                 <string>        let options = Options(allowedOrigin: .all)
         let cors    = CORS   (options: options)
         router.all("/*", middleware: cors)
