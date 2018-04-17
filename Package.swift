@@ -9,16 +9,17 @@ let package = Package(
     name: "Kitura_XcodeImage",
     dependencies: [
         .package(url: "https://github.com/IBM-Swift/Kitura.git",
-                .upToNextMinor(from: "2.1.0")),
-        .package(url: "https://github.com/IBM-Swift/HeliumLogger.git",
+                .upToNextMinor(from: "2.3.0")),
+        .package(url: "https://github.com/IBM-Swift/LoggerAPI.git",
                 .upToNextMinor(from: "1.7.1")),
+                /*
         .package(url: "https://github.com/IBM-Swift/CloudEnvironment.git", 
-                 from: "6.0.0"),
+                 from: "7.1.0"),
         .package(url: "https://github.com/RuntimeTools/SwiftMetrics.git",
-                 from: "2.0.0"),
+                 from: "2.2.1"),
+                 */
         .package(url: "https://github.com/IBM-Swift/Health.git",
-                 from: "0.0.0"),
-                 
+                 from: "1.0.1"),
         // extras
         .package(url: "https://github.com/IBM-Swift/Kitura-CORS",
                  .upToNextMinor(from: "2.1.0")),
@@ -27,9 +28,9 @@ let package = Package(
         .target(name: "Kitura_XcodeImage", 
                 dependencies: [ 
                     "Kitura" , 
-                    "HeliumLogger",
-                    "CloudEnvironment",
-                    "SwiftMetrics",
+                    "LoggerAPI",
+//                    "CloudEnvironment",
+//                    "SwiftMetrics",
                     "Health",
                     
                     // extras
