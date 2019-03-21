@@ -29,7 +29,7 @@ let package = Package(
                     "CloudEnvironment",
                     "SwiftMetrics",
                     "Health",
-                    "Kitura-CORS"
+                    "KituraCORS"
                 ])
     ]
 )
