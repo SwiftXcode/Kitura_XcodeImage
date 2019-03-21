@@ -70,7 +70,7 @@ ln -sf "${SOURCE_ROOT}/${PRODUCT_NAME}/.buildzz/.build" "${BUILT_PRODUCTS_DIR}/.
       <string>Sources/___PACKAGENAME___/Routes/___PACKAGENAMEASIDENTIFIER___Routes.swift</string>
 
       <string>Package.swift:spmpackagedecl:deps:Kitura(url: "https://github.com/IBM-Swift/Kitura.git",
-                 .upToNextMinor(from: "2.1.0"\))</string>
+                 .upToNextMinor(from: "2.6.0"\))</string>
       <string>Package.swift:spmpackagedecl:targets:default:Kitura</string>
 
       <string>Package.swift:spmpackagedecl:deps:HeliumLogger(url: "https://github.com/IBM-Swift/HeliumLogger.git",
@@ -78,7 +78,7 @@ ln -sf "${SOURCE_ROOT}/${PRODUCT_NAME}/.buildzz/.build" "${BUILT_PRODUCTS_DIR}/.
       <string>Package.swift:spmpackagedecl:targets:default:HeliumLogger</string>
 
       <string>Package.swift:spmpackagedecl:deps:CloudEnvironment(url: "https://github.com/IBM-Swift/CloudEnvironment.git",
-                 from: "6.0.0")</string>
+                 from: "9.0.0")</string>
       <string>Package.swift:spmpackagedecl:targets:default:CloudEnvironment</string>
 
       <string>Package.swift:spmpackagedecl:deps:SwiftMetrics(url: "https://github.com/RuntimeTools/SwiftMetrics.git",
@@ -213,7 +213,7 @@ ln -sf "${SOURCE_ROOT}/${PRODUCT_NAME}/.buildzz/.build" "${BUILT_PRODUCTS_DIR}/.
               <key>Nodes</key>
               <array>
                 <string>Package.swift:spmpackagedecl:deps:Health(url: "https://github.com/IBM-Swift/Health.git",
-                           from: "0.0.0")</string>
+                           from: "1.0.0")</string>
                 <string>Package.swift:spmpackagedecl:targets:default:Health</string>
 
                 <string>Sources/___PACKAGENAME___/Application/___PACKAGENAMEASIDENTIFIER___App.swift:imports:import:Health</string>
