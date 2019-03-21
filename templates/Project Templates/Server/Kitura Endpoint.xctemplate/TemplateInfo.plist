@@ -156,7 +156,7 @@ ln -sf "${SOURCE_ROOT}/${PRODUCT_NAME}/.buildzz/.build" "${BUILT_PRODUCTS_DIR}/.
   		<key>*:kitura:appclass:postInit</key>
       <dict>
         <key>Beginning</key>
-        <string>    public func postInit() throws {
+        <string>    func postInit() throws {
         // Endpoints</string>
         <key>End</key>
         <string>    }
