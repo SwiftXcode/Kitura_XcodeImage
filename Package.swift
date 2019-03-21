@@ -17,7 +17,9 @@ let package = Package(
         .package(url: "https://github.com/RuntimeTools/SwiftMetrics.git",
                  from: "2.0.0"),
         .package(url: "https://github.com/IBM-Swift/Health.git",
-                 from: "1.0.0")
+                 from: "1.0.0"),
+        .package(url: "https://github.com/IBM-Swift/Kitura-CORS",
+                 from: "2.1.0")
     ],
     targets: [
         .target(name: "Kitura_XcodeImage", 
@@ -26,7 +28,8 @@ let package = Package(
                     "HeliumLogger",
                     "CloudEnvironment",
                     "SwiftMetrics",
-                    "Health"
+                    "Health",
+                    "Kitura-CORS"
                 ])
     ]
 )

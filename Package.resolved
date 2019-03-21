@@ -83,6 +83,15 @@
         }
       },
       {
+        "package": "KituraCORS",
+        "repositoryURL": "https://github.com/IBM-Swift/Kitura-CORS",
+        "state": {
+          "branch": null,
+          "revision": "534734a0b0c0ddf56adfed0715e45a57bd97d1a3",
+          "version": "2.1.0"
+        }
+      },
+      {
         "package": "Kitura-net",
         "repositoryURL": "https://github.com/IBM-Swift/Kitura-net.git",
         "state": {
